@@ -1,3 +1,4 @@
 FROM conda/miniconda3
 
-RUN conda install faiss-cpu -c pytorch
+RUN conda install -y -c pytorch faiss-cpu \
+    && conda clean --all
